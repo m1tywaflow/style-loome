@@ -3,10 +3,10 @@ import abstractSun from "@/public/abstract/abstractSun.png";
 
 export default function FirstBanner() {
   return (
-    <section className="w-full py-6 md:py-8">
+    <section className="w-full">
       <div className="max-w-7xl mx-auto px-4">
-        <div className=" relative overflow-hidden border border-dashed border-[#1C1C1C] min-h-42.5 flex items-center">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-center w-full pl-6 md:pl-12 pr-0">
+        <div className="relative overflow-hidden border border-dashed border-[#1C1C1C] min-h-42.5 flex items-center">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center w-full pl-6 md:pl-12">
             <div className="max-w-3xl py-8 md:py-0 z-10">
               <h1 className="text-white uppercase text-2xl sm:text-3xl md:text-[48px] font-semibold leading-tight tracking-[-0.03em]">
                 Navigating the <span className="font-bold">StyleLoom</span>{" "}

@@ -5,7 +5,7 @@ export default function FirstBanner() {
   return (
     <section className="w-full">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="relative overflow-hidden border border-dashed border-[#1C1C1C] min-h-42.5 flex items-center">
+        <div className="relative overflow-hidden border border-dashed border-[#1C1C1C] min-h-42.5 flex items-center py-10">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center w-full pl-6 md:pl-12">
             <div className="max-w-3xl py-8 md:py-0 z-10">
               <h1 className="text-white uppercase text-2xl sm:text-3xl md:text-[48px] font-semibold leading-tight tracking-[-0.03em]">
@@ -22,7 +22,7 @@ export default function FirstBanner() {
                 src={abstractSun}
                 alt="Abstract sun"
                 priority
-                className="h-full w-auto object-contain max-h-42.5"
+                className="h-full w-auto object-contain max-h-70"
               />
             </div>
           </div>

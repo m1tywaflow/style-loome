@@ -2,8 +2,8 @@ export default function TextSection() {
   const categories = ["All", "Mens", "Womens", "Kids"];
 
   return (
-    <section className=" text-white w-full flex justify-center px-6 py-12">
-      <div className="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-2 border border-[#1C1C1C]">
+    <section className=" text-white w-full flex  justify-center px-6 py-12">
+      <div className="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-2 border border-dashed border-[#1C1C1C]">
         <div className="p-10 border-b lg:border-b-0 lg:border-r border-dashed border-[#1C1C1C]">
           <div className="flex gap-3 mb-10 flex-wrap">
             {categories.map((item) => (

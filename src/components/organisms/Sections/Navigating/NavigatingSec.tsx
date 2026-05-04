@@ -25,7 +25,7 @@ const info = [
 
 export default function NavigatingSec() {
   return (
-    <section className="w-full bg-black py-10">
+    <section className="w-full py-10">
       <FirstBanner />
       <div className="max-w-7xl mx-auto px-4 mt-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">

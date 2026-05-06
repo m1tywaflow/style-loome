@@ -31,7 +31,7 @@ export default function NavigatingSec() {
         {info.map((item) => (
           <div
             key={item.step}
-            className="p-6 border border-dashed border-[#1C1C1C]"
+            className="p-6 border border-dashed border-[#1C1C1C] rounded-b-2xl"
           >
             <span className="text-sm text-[#676665] uppercase tracking-wide">
               {item.step}

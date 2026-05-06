@@ -3,6 +3,7 @@ import NavigatingSec from "../components/organisms/Sections/Navigating/Navigatin
 import Trends from "../components/organisms/Sections/CraftingTrends/Trends";
 import YellowBanner from "../components/molecules/Banners/YellowBanner";
 import Elevate from "../components/organisms/Sections/Elevate/Elevate";
+import Comments from "../components/organisms/Sections/CommentsSection/Comments";
 export default function Home() {
   return (
     <>
@@ -10,6 +11,7 @@ export default function Home() {
       <Trends />
       <NavigatingSec />
       <Elevate />
+      <Comments />
       <YellowBanner />
     </>
   );

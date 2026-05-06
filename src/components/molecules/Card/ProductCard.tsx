@@ -16,7 +16,7 @@ export function ProductCard({ product }) {
           <span className="text-xs px-3 py-1 bg-[#1F1F1F]/90 rounded-full backdrop-blur">
             {product.category}
           </span>
-          <button className="flex items-center gap-1 text-xs px-3 py-1 rounded-full border border-[#AE9B84] bg-[#1F1F1F]/90 backdrop-blur hover:bg-white hover:text-black transition">
+          <button className="flex items-center gap-1 text-xs px-3 py-1 rounded-full border border-[#AE9B84] bg-[#1F1F1F]/90 hover:bg-white hover:text-black duration-200 cursor-pointer transition">
             Shop Now
             <ArrowUpRight size={14} />
           </button>

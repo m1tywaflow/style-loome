@@ -42,7 +42,7 @@ const trends = [
 export default function Trends() {
   return (
     <>
-      <section className="max-w-7xl mx-auto">
+      <section className="w-[1600px] mx-auto">
         <header className=" p-10 border rounded-t-2xl border-dashed border-[#1C1C1C]">
           <h1 className="text-3xl">Crafting Trends, Inspiring Confidence</h1>
           <p className="text-sm text-[#676665]">

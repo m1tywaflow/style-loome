@@ -25,27 +25,25 @@ const info = [
 
 export default function NavigatingSec() {
   return (
-    <section className="w-full py-10 ">
+    <section className="w-[1600px] mx-auto py-10 ">
       <FirstBanner />
-      <div className="max-w-7xl mx-auto px-4 mt-8 ">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 ">
-          {info.map((item) => (
-            <div
-              key={item.step}
-              className="p-6 border border-dashed border-[#1C1C1C]"
-            >
-              <span className="text-sm text-[#676665] uppercase tracking-wide">
-                {item.step}
-              </span>
-              <h3 className="mt-4 text-white text-xl font-semibold">
-                {item.title}
-              </h3>
-              <p className="mt-3 text-sm leading-relaxed text-[#676665]">
-                {item.text}
-              </p>
-            </div>
-          ))}
-        </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 ">
+        {info.map((item) => (
+          <div
+            key={item.step}
+            className="p-6 border border-dashed border-[#1C1C1C]"
+          >
+            <span className="text-sm text-[#676665] uppercase tracking-wide">
+              {item.step}
+            </span>
+            <h3 className="mt-4 text-white text-xl font-semibold">
+              {item.title}
+            </h3>
+            <p className="mt-3 text-sm leading-relaxed text-[#676665]">
+              {item.text}
+            </p>
+          </div>
+        ))}
       </div>
     </section>
   );

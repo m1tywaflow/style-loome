@@ -1,9 +1,17 @@
+import { Counter } from "@/src/components/atoms/Counter/Counter";
 export default function TextSection() {
   const categories = ["All", "Mens", "Womens", "Kids"];
 
+  const stats = [
+    { value: 1500, suffix: "+", desc: "Fashion Products" },
+    { value: 50, suffix: "+", desc: "New arrivals every month." },
+    { value: 30, suffix: "%", desc: "OFF on select items." },
+    { value: 95, suffix: "%", desc: "Customer Satisfaction Rate" },
+  ];
+
   return (
-    <section className=" text-white w-full flex  justify-center px-6 py-12">
-      <div className="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-2 border border-dashed border-[#1C1C1C]">
+    <section className=" text-white w-[1600px] mx-auto pb-12">
+      <div className=" grid grid-cols-1 lg:grid-cols-2 border border-dashed border-[#1C1C1C]">
         <div className="p-10 border-b lg:border-b-0 lg:border-r border-dashed border-[#1C1C1C]">
           <div className="flex gap-3 mb-10 flex-wrap">
             {categories.map((item) => (
@@ -25,18 +33,15 @@ export default function TextSection() {
           </p>
         </div>
         <div className="grid grid-cols-2">
-          {[
-            ["1,500 +", "Fashion Products"],
-            ["50 +", "New arrivals every month."],
-            ["30%", "OFF on select items."],
-            ["95%", "Customer Satisfaction Rate"],
-          ].map(([title, desc], index) => (
+          {stats.map((item, index) => (
             <div
               key={index}
               className="p-10 border border-dashed border-[#1C1C1C] flex flex-col justify-center min-h-[180px]"
             >
-              <h2 className="text-4xl font-semibold mb-3">{title}</h2>
-              <p className="text-[#676665] text-base">{desc}</p>
+              <h2 className="text-4xl font-semibold mb-3">
+                <Counter end={item.value} suffix={item.suffix} />
+              </h2>
+              <p className="text-[#676665] text-base">{item.desc}</p>
             </div>
           ))}
         </div>

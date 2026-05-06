@@ -16,7 +16,7 @@ export const Header = () => {
           <button className="p-2 rounded-xl bg-zinc-800 hover:bg-zinc-700 cursor-pointer duration-200 transition">
             <ShoppingCart size={18} />
           </button>
-          <button className="px-4 py-2 rounded-xl bg-[#C7B299] hover:bg-black hover:text-white text-black font-medium hover:opacity-90 border border-white cursor-pointer duration-200 transition">
+          <button className="px-4 py-2 rounded-xl bg-[#AE9B84] font-sans hover:bg-white  text-black font-medium hover:opacity-90 cursor-pointer duration-200 transition">
             Contact
           </button>
         </div>

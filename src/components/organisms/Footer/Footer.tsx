@@ -19,7 +19,7 @@ const columns = [
 
 export function Footer() {
   return (
-    <footer className="bg-black text-white border-t  border-white/[0.06]">
+    <footer className="bg-black text-white border-t   border-white/[0.06]">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between px-8 pt-14 pb-12 border-b  border-white/[0.06]">
           <h1 className="text-[72px] leading-none  font-semibold">

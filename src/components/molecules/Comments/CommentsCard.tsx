@@ -8,10 +8,10 @@ import abstract from "public/abstract/abstractComments.png";
 
 export default function CommentsCard() {
   return (
-    <section className="max-w-[1600px] mx-auto py-20">
+    <section className="max-w-[1600px] mx-auto py-20 font-mono">
       <div className="border border-dashed border-[#1C1C1C] flex justify-between rounded-t-2xl">
         <div className="p-20">
-          <h1 className="text-5xl font-sans uppercase">
+          <h1 className="text-5xl font-mono uppercase">
             The StyleLoom Testimonial Collection.
           </h1>
           <p className="text-sm pt-4 text-[#676665]">

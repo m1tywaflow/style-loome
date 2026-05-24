@@ -12,21 +12,23 @@ export function ProductCard({ product }) {
           height={400}
           className="rounded-xl w-full object-cover"
         />
-        <div className="absolute bottom-3 left-3 right-3 flex justify-between items-center">
-          <span className="text-xs px-3 py-1 bg-[#1F1F1F]/90 rounded-full backdrop-blur">
+        <div className="absolute bottom-3 font-mono left-3 right-3 flex justify-between items-center">
+          <span className="text-xs  px-3 py-1 bg-[#1F1F1F]/90 rounded-full backdrop-blur">
             {product.category}
           </span>
-          <button className="flex items-center gap-1 text-xs px-3 py-1 rounded-full border border-[#AE9B84] bg-[#1F1F1F]/90 hover:bg-white hover:text-black duration-200 cursor-pointer transition">
+          <button className="flex  items-center gap-1 text-xs px-3 py-1 rounded-full border border-[#AE9B84] bg-[#1F1F1F]/90 hover:bg-white hover:text-black duration-200 cursor-pointer transition">
             Shop Now
             <ArrowUpRight size={14} />
           </button>
         </div>
       </div>
       <div className="mt-4">
-        <h3 className="text-lg font-medium tracking-wide">{product.title}</h3>
-        <p className="text-sm text-[#676665] mt-2">
+        <h3 className="text-lg font-mono tracking-wide">{product.title}</h3>
+        <p className="text-sm font-mono text-[#676665] mt-2">
           Fit · {product.fit}
-          <span className="mx-2">Price · ${product.price}</span>
+          <span className="mx-2 font-mono text-white">
+            Price · ${product.price}
+          </span>
         </p>
       </div>
     </div>

@@ -25,7 +25,7 @@ const info = [
 
 export default function NavigatingSec() {
   return (
-    <section className="w-[1600px] mx-auto py-10 ">
+    <section className="w-[1600px] mx-auto py-10 font-mono ">
       <FirstBanner />
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 ">
         {info.map((item) => (

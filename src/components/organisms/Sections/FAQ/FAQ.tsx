@@ -91,7 +91,7 @@ export default function FAQ() {
   const [active, setActive] = useState<keyof typeof faqData>("All");
 
   return (
-    <section className="w-full bg-black px-4 pb-20 pt-10">
+    <section className="w-full  px-4 pb-20 pt-10">
       <div className="mx-auto max-w-[1600px] overflow-hidden rounded-[24px] border border-dashed border-[#1C1C1C]">
         <div className="relative overflow-hidden border-b border-dashed border-[#1C1C1C]">
           <div className="relative z-10 px-8 py-14 md:px-14">

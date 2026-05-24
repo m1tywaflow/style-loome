@@ -4,7 +4,7 @@ import { ArrowUpRight } from "lucide-react";
 
 export default function YellowBanner() {
   return (
-    <section className="w-[1600px] mx-auto ">
+    <section className="w-[1600px] mx-auto pb-20 ">
       <div className="bg-[#C2B4A3] rounded-2xl  flex items-center justify-between overflow-hidden">
         <div className="max-w-5xl p-10">
           <h2 className="text-4xl font-semibold uppercase tracking-wide text-black">

@@ -19,10 +19,10 @@ const columns = [
 
 export function Footer() {
   return (
-    <footer className="bg-black text-white border-t border-white/[0.06]">
+    <footer className="bg-black text-white border-t  border-white/[0.06]">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between px-8 pt-14 pb-12 border-b border-white/[0.06]">
-          <h1 className="text-[72px] leading-none font-semibold tracking-[-4px]">
+        <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between px-8 pt-14 pb-12 border-b  border-white/[0.06]">
+          <h1 className="text-[72px] leading-none  font-semibold">
             Style<span className="text-[#b8a58a]">.</span>Loom
           </h1>
           <div className="flex gap-3 mt-10 lg:mt-0">
@@ -46,16 +46,16 @@ export function Footer() {
             })}
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-16 px-8 py-10 border-b border-white/[0.06]">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-16 px-4 py-10 border-b border-dashed border-white/[0.06]">
           {columns.map((col) => (
             <div key={col.title}>
-              <h3 className="text-sm font-medium mb-5">{col.title}</h3>
+              <h3 className="text-sm font-mono mb-5">{col.title}</h3>
               <nav className="flex flex-wrap gap-x-4 gap-y-2">
                 {col.links.map((link, index) => (
                   <div key={link.href} className="flex items-center gap-4">
                     <Link
                       href={link.href}
-                      className="text-sm text-white/35 hover:text-white transition"
+                      className="text-sm font-mono text-white/35 hover:text-white transition"
                     >
                       {link.label}
                     </Link>
@@ -68,14 +68,12 @@ export function Footer() {
             </div>
           ))}
           <div className="md:ml-auto w-full max-w-sm">
-            <h3 className="text-sm font-medium mb-5">
-              Subscribe to Newsletter
-            </h3>
+            <h3 className="text-sm font-mono mb-5">Subscribe to Newsletter</h3>
             <form className="relative">
               <input
                 type="email"
                 placeholder="Your Email"
-                className="w-full h-12 bg-[#111111] border border-white/[0.04] rounded-md px-5 pr-14 text-sm text-white placeholder:text-white/25 outline-none"
+                className="w-full font-mono h-12 bg-[#111111] border-dashed border-white/[0.04] rounded-md px-5 pr-14 text-sm text-white placeholder:text-white/25 outline-none"
               />
               <button
                 type="submit"
@@ -86,7 +84,7 @@ export function Footer() {
             </form>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-5 px-8 py-6">
+        <div className="flex font-mono flex-col md:flex-row items-start md:items-center justify-between gap-5 px-8 py-6">
           <p className="text-xs tracking-wide text-white/30">
             © 2024 StyleLoom. All rights reserved.
           </p>

@@ -3,6 +3,9 @@
 import { useState } from "react";
 import abstractStar from "public/abstract/abstractStar.png";
 import Image from "next/image";
+import { products } from "@/src/data/products";
+import { ProductCard } from "@/src/components/molecules/Card/ProductCard";
+
 export default function Explore() {
   const categories = ["All", "Mens", "Womens", "Kids"];
   const [active, setActive] = useState("Womens");
@@ -48,6 +51,11 @@ export default function Explore() {
               />
             </div>
           </div>
+        </div>
+        <div className="grid grid-cols-3 gap-6">
+          {products.map((item) => (
+            <ProductCard key={item.id} product={item} />
+          ))}
         </div>
       </section>
     </>

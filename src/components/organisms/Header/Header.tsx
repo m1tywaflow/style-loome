@@ -6,9 +6,7 @@ export const Header = () => {
     <header className="w-full border-b border-zinc-800 bg-black text-white font-mono">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         <div className="flex items-center gap-3">
-          <NavLink href="/" active>
-            Home
-          </NavLink>
+          <NavLink href="/">Home</NavLink>
           <NavLink href="/products">Products</NavLink>
         </div>
         <div className="text-lg font-semibold tracking-wide">Style.Loome</div>

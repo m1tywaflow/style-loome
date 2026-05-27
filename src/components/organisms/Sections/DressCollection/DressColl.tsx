@@ -10,7 +10,7 @@ export default function DressColl() {
   const [active, setActive] = useState("Womens");
   return (
     <>
-      <section className="w-[1600px] mx-auto font-mono p-20">
+      <section className="w-[1750px] mx-auto font-mono p-20">
         <div className="relative overflow-hidden border border-dashed border-[#1C1C1C] min-h-42.5 flex items-center py-10 rounded-t-2xl">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center w-full pl-6 md:pl-12">
             <div className="max-w-6xl md:py-0 z-10">

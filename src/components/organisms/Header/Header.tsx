@@ -1,5 +1,6 @@
 import { NavLink } from "./components/NavLinks";
 import { ShoppingCart } from "lucide-react";
+import Link from "next/link";
 
 export const Header = () => {
   return (
@@ -14,9 +15,12 @@ export const Header = () => {
           <button className="p-2 rounded-xl bg-zinc-800 hover:bg-zinc-700 cursor-pointer duration-200 transition">
             <ShoppingCart size={18} />
           </button>
-          <button className="px-4 py-2 rounded-xl bg-[#AE9B84] font-sans hover:bg-white  text-black font-medium hover:opacity-90 cursor-pointer duration-200 transition">
+          <Link
+            href="/contact"
+            className="px-4 py-2 rounded-xl bg-[#AE9B84] text-black font-medium font-sans hover:bg-white transition duration-200"
+          >
             Contact
-          </button>
+          </Link>
         </div>
       </div>
     </header>

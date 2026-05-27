@@ -1,9 +1,13 @@
+"use client";
+import { useState } from "react";
 import abstractStar from "public/abstract/abstractStar.png";
 import Image from "next/image";
 import { shop } from "@/src/data/shopItems";
 import { DressCard } from "@/src/components/molecules/Card/DressCard";
 
 export default function DressColl() {
+  const categories = ["All", "Mens", "Womens", "Kids"];
+  const [active, setActive] = useState("Womens");
   return (
     <>
       <section className="w-[1600px] mx-auto font-mono p-20">
@@ -18,6 +22,24 @@ export default function DressColl() {
                 curated selection brings together the latest trends and timeless
                 classics
               </p>
+              <div className="pt-5 flex gap-4">
+                {categories.map((item) => (
+                  <button
+                    key={item}
+                    onClick={() => setActive(item)}
+                    className={`
+            px-5 py-2 text-sm rounded-xl border transition
+            ${
+              active === item
+                ? "bg-[#C2B4A3] text-black "
+                : "text-[#B3B3B2] border-dashed border-[#1C1C1C] hover:text-white"
+            }
+          `}
+                  >
+                    {item}
+                  </button>
+                ))}
+              </div>
             </div>
             <div className="absolute right-0 top-1/2 -translate-y-1/2 h-full flex items-center">
               <Image

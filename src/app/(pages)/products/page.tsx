@@ -1,11 +1,11 @@
-import Explore from "@/src/components/organisms/products/Explore/Explore";
 import Comments from "@/src/components/organisms/Sections/CommentsSection/Comments";
 import FAQ from "@/src/components/organisms/Sections/FAQ/FAQ";
 import YellowBanner from "@/src/components/molecules/Banners/YellowBanner";
+import DressColl from "@/src/components/organisms/Sections/DressCollection/DressColl";
 export default function Products() {
   return (
     <>
-      <Explore />
+      <DressColl />
       <Comments />
       <FAQ />
       <YellowBanner />

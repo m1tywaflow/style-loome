@@ -17,7 +17,7 @@ export const Header = () => {
           </button>
           <Link
             href="/contact"
-            className="px-2 py-2 rounded-xl bg-[#AE9B84] text-black font-medium font-sans hover:bg-white transition duration-200"
+            className="px-4 py-2 rounded-xl bg-[#AE9B84] text-black font-medium font-sans hover:bg-white transition duration-200"
           >
             Contact
           </Link>

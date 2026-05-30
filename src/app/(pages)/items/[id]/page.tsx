@@ -5,6 +5,11 @@ type Props = {
 };
 
 export default async function ProductPage({ params }: Props) {
-  const { id } = await params;
-  return <></>;
+  const { id } = params;
+
+  return (
+    <div>
+      <h1>Product ID: {id}</h1>
+    </div>
+  );
 }

@@ -86,7 +86,7 @@ export function Footer() {
         </div>
         <div className="flex font-mono flex-col md:flex-row items-start md:items-center justify-between gap-5 px-8 py-6">
           <p className="text-xs tracking-wide text-white/30">
-            © 2024 StyleLoom. All rights reserved.
+            © 2026 StyleLoom. All rights reserved.
           </p>
           <div className="flex items-center gap-5 text-xs text-white/30">
             <Link

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import abstract from "public/abstract/abstractDevBanner.png";
 import { ArrowUpRight } from "lucide-react";
+import Link from "next/link";
 
 export default function YellowBanner() {
   return (
@@ -17,12 +18,15 @@ export default function YellowBanner() {
           </p>
         </div>
         <div className="flex items-center gap-6 relative">
-          <button className="bg-black border-2 font-bold border-black cursor-pointer hover:bg-white hover:text-black transition duration-200 text-white px-5 py-2.5 rounded-lg text-sm flex items-center gap-2 z-10">
+          <Link
+            href={"/products"}
+            className="bg-black border-2 font-bold border-black cursor-pointer hover:bg-white hover:text-black transition duration-200 text-white px-5 py-2.5 rounded-lg text-sm flex items-center gap-2 z-10"
+          >
             Shop Now{" "}
             <span>
               <ArrowUpRight />
             </span>
-          </button>
+          </Link>
           <div className="relative w-65 h-45">
             <Image
               src={abstract}

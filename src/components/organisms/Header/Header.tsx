@@ -10,7 +10,12 @@ export const Header = () => {
           <NavLink href="/">Home</NavLink>
           <NavLink href="/products">Products</NavLink>
         </div>
-        <div className="text-lg font-semibold tracking-wide">Style.Loome</div>
+        <Link
+          href="/"
+          className="text-lg font-semibold tracking-wide cursor-pointer hover:text-[#AE9B84] duration-200 transition"
+        >
+          Style.Loome
+        </Link>
         <div className="flex items-center gap-3">
           <button className="p-2 rounded-xl bg-zinc-800 hover:bg-zinc-700 cursor-pointer duration-200 transition">
             <ShoppingCart size={18} />
